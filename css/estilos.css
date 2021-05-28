@@ -42,23 +42,24 @@ h1{
     color: cornsilk;
 }
 .imagenFrase{
+    position: relative;
     height: 80%;
 }
 .imagenHeader{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .fraseHeader{
-    position: absolute;
-    top: 50%;
+    text-align: center;
+    height: 10vh;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    color: black;
-    font-weight: bold;
-    font-size: 2vw;
+    bottom: 50%;
     width: 100%;
+    font-size: 2vw;
+    color:rgb(102, 90, 90);
+    font-weight: bold;
 }
 h2 {
     color: coral;
@@ -80,8 +81,13 @@ h2 {
     height: 100vh;
     
 }
+.pProfesionales {
+    font-size: 100%;
+    margin-left: 5%;
+}
 .profesionales {
     top: 50%;
+    
     
 }
 footer {
@@ -93,10 +99,12 @@ footer {
     width: 100%;
     background-color: rgb(236, 176, 127);
 }
-.imagenprofesional {
-    height: 50vh;
-    width: 50vh;
-    left: 10%
+.imagenProfesional {
+    border-radius: 4%;
+    height: 60vh;
+    width: 30vw;
+    left: auto;
+    margin-left: 15%;
 }
 .gridd {
     display: grid;
@@ -125,6 +133,7 @@ label {
     margin: .4rem 0;
 }
 .imagencalendario {
+    border-radius: 4%;
     height: 50%;
     width: 50%;
 }
@@ -147,7 +156,45 @@ label {
     align-items: center;
 }
 .imagenreiki {
+    border-radius: 4%;
     width: 40vw;
     height: 20%;
     object-fit: cover;
+    margin-left: 30%;
+}
+.quees{
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 576px) {
+    .imagenProfesional {
+        width: 20vw;
+        height: 40vh;
+        margin-left: 15%;
+    }
+    .pProfesionales{
+        font-size: 70%;
+        margin-left: 5%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .fraseHeader {
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .imagenProfesional {
+        width: 25vw;
+        height: 50vh;
+        margin-left: 15%;
+    }
+    .pProfesionales{
+        font-size: 70%;
+        margin-left: 5%;
+    }
+    .fraseHeader {
+        font-size: 3vw;
+    }
 }
