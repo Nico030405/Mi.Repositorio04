@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+header{
+    height: 100vh;
+    background-color: rgb(236, 176, 127);
+}
+nav {
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+nav a {
+    color: cornsilk;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cornsilk;
+}
+.imagenFrase{
+    height: 80%;
+}
+.imagenHeader{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.fraseHeader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: black;
+    font-weight: bold;
+    font-size: 2vw;
+    width: 100%;
+}
+h2 {
+    color: coral;
+    text-align: center;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quienes_somos {
+    display: flexbox;
+    
+}
+.main1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.profesionales {
+    top: 50%;
+    
+}
+footer {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 25px;
+    width: 100%;
+    background-color: rgb(236, 176, 127);
+}
+.imagenprofesional {
+    height: 50vh;
+    width: 50vh;
+    left: 10%
+}
+.gridd {
+    display: grid;
+    grid-template-columns: 25vh 25vh
+}
+.dates {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    }
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+.imagencalendario {
+    height: 50%;
+    width: 50%;
+}
+.backgroundcontactanos {
+    font-weight: bold;
+    background-color: rgb(60, 95, 172);
+
+}
+.main2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    
+}
+.divreiki{
+    top: 5%;
+    height: 10%;
+    align-items: center;
+}
+.imagenreiki {
+    width: 40vw;
+    height: 20%;
+    object-fit: cover;
+}
